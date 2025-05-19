@@ -1,0 +1,47 @@
+# Project information
+site_name: OpenData bei St.Gallen-Bodensee Tourismus
+site_url: https://opendata.st.gallen-bodensee.ch/
+theme:
+  name: material
+  logo: assets/logo-sgbt-minimiert.svg
+  favicon: assets/favicon-180-180.png
+  features:
+    - content.tabs.link
+    - content.code.copy
+    - content.action.view
+    - content.action.edit
+  custom_dir: overrides
+
+plugins: []
+
+extra_css:
+  - stylesheets/app.css
+  - stylesheets/custom.css
+  - stylesheets/contentdesk.css
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - tables
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+copyright: Portal powered by <a href="https://tso.ch/">TSO AG</a>
