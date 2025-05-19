@@ -23,7 +23,17 @@
   background-color: #0f0f0f;
 }
 
-a {
+.md-typeset a:hover {
+  color: rgb(15, 15, 15);
+  text-decoration: none;
+}
+
+.md-typeset a {
   color: rgb(15, 15, 15);
   text-decoration: underline;
+}
+
+.md-typeset a:hover {
+  color: rgb(15, 15, 15);
+  text-decoration: none;
 }
